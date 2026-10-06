@@ -1,3 +1,4 @@
+
 /* CAPÇELERA */
 
 #capçalera{
@@ -58,6 +59,7 @@
 form{
     display: flex;
     align-items: center;
+    font-family: sans-serif;
     
 }
 .form_main{
