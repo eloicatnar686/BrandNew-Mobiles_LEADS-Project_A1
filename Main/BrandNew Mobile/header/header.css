@@ -1,3 +1,23 @@
-img{width: 10%;height: 10%;}
-body{background-color: white;}
-#capçalera{background-color: red;display: flex;flex-direction: row;justify-content: space-between}
+#capçalera{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-between;
+}
+
+.logo{
+    
+}
+
+.carrito{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carrito img{
+    width: 50px;
+}
+
