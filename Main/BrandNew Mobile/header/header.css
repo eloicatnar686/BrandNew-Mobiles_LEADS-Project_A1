@@ -90,3 +90,18 @@ label#label_form1{
 button#submit{
     margin: 10px;
 }
+.Menu nav {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.Menu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    background-color: red;
+}
