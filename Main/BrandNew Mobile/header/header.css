@@ -1,3 +1,5 @@
+/* CAPÇELERA */
+
 #capçalera{
     display: flex;
     flex-direction: row;
@@ -8,11 +10,13 @@
     flex-wrap: wrap;
 }
 
+/* CAP --> LOGO */
 .logo{
   display: flex;
     width: 100px;
 }
 
+/* CAP --> CARRITO */
 .carrito{
     width: 10%;
     display: flex;
@@ -24,6 +28,7 @@
     display: flex;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 300px){
     
     #label_form1{
@@ -38,7 +43,6 @@
 }
 
 
-
 @media screen and (max-width: 130px){
     .carrito{
         display: none;
@@ -47,7 +51,6 @@
         display: none;
     }
 }
-
 
 
 /* FORM */
