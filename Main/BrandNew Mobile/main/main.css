@@ -310,9 +310,14 @@ article .presentacio{
 
     }
     
+    .banner_principal .boton_banner{
+        margin-bottom: 20px;
+        
+    }
+    
     /* NOTA DEV: FALTA CENTRAR Y MEJORAR BOTON EN MOVIL */
     
-    .banner_principal .boton_banner a{
+    .banner_principal .boton_banner #boton_ban_1{
         padding: 10px;
     }
     
