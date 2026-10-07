@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>BrandNew Mobile/cataleg</title>
-    <link type="text/css" rel="stylesheet" href="cataleg.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileCat - Catàleg de mòbils</title>
+    <link rel="stylesheet" href="cataleg.css">
 </head>
 <body>
+
+<!-- CAPÇALERA -->
+<header>
+    <div id="capçalera">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../MEDIA/logo_white.svg" alt="Logo MobileCat">
+        </div>
+        <!-- BUSCADOR -->
+        <div class="form_main">
+            <form action="#" method="GET" class="form">
+                <label for="caja-busqueda" id="label_form1">Buscar:</label>
+                <input type="search" id="caja-busqueda" name="q" placeholder="Què vols buscar?">
+                <button type="submit" id="submit">🔍</button>
+            </form>
+        </div>
+
+        <!-- CARRET -->
+        <div class="carrito">
+            <img src="../MEDIA/carrito.png" alt="Carret de compra">
+            <span id="cart-count">0</span>
+        </div>
+    </div>
+
+    <!-- MENÚ DE NAVEGACIÓ -->
+    <div class="Menu">
+        <nav>
+            <a href="#capçalera">Inici</a>
+            <a href="../cataleg/cataleg.html">Catàleg</a>
+            <a href="../condicions/condicions.html">Condicions</a>
+            <a href="../signup/signup.html">Iniciar sessió</a>
+        </nav>
+    </div>
+</header>
+<!-- SECCIÓ DE PRODUCTES -->
+<main id="mobils">
+    <h2>Tipus de mòbils</h2>
+    <p class="subtitol">Tria el dispositiu que millor s'adapti a tu</p>
+
+    <div class="productes">
+
+        <!-- PRODUCTE 1: IPHONE -->
+        <article class="producte">
+            <div class="imatge-producte">
+                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=500&q=80" alt="iPhone">
+            </div>
+            <div class="info-producte">
+                <span class="marca">APPLE</span>
+                <h3>iPhone</h3>
+                <p>Un mòbil potent, elegant i amb una càmera espectacular.</p>
+                <div class="preu">899 €</div>
+                <button type="button" onclick="afegirAlCarret('iPhone')">Afegir al carret</button>
+            </div>
+        </article>
+
+        <!-- PRODUCTE 2: SAMSUNG -->
+        <article class="producte">
+            <div class="imatge-producte">
+                <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=500&q=80" alt="Samsung Galaxy">
+            </div>
+            <div class="info-producte">
+                <span class="marca">SAMSUNG</span>
+                <h3>Galaxy</h3>
+                <p>Pantalla AMOLED, gran càmera i bateria per a tot el dia.</p>
+                <div class="preu">749 €</div>
+                <button type="button" onclick="afegirAlCarret('Samsung Galaxy')">Afegir al carret</button>
+            </div>
+        </article>
+
+        <!-- PRODUCTE 3: GOOGLE PIXEL -->
+        <article class="producte">
+            <div class="imatge-producte">
+                <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=500&q=80" alt="Google Pixel">
+            </div>
+            <div class="info-producte">
+                <span class="marca">GOOGLE</span>
+                <h3>Pixel</h3>
+                <p>Android pur, càmera intel·ligent i un rendiment excel·lent.</p>
+                <div class="preu">649 €</div>
+                <button type="button" onclick="afegirAlCarret('Google Pixel')">Afegir al carret</button>
+            </div>
+        </article>
+
+    </div>
+</main>
 </body>
 </html>

@@ -1,0 +1,302 @@
+/* ==================================================
+   ESTILS GENERALS I BÀSICS
+================================================== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{background:url("../MEDIA/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* ==================================================
+   CAPÇALERA (HEADER)
+================================================== */
+#capçalera {
+    display: flex;
+    flex-direction: row;
+    background-color: #ff0000;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px dotted #ffffff;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* BUSCADOR */
+.form_main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+form #caja-busqueda {
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    padding: 0 15px;
+    outline: none;
+}
+
+label#label_form1 {
+    margin: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+button#submit {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* CARRET */
+.carrito {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.carrito img {
+    width: 30px;
+    display: block;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================================================
+   MENÚ DE NAVEGACIÓ
+================================================== */
+.Menu {
+    background-color: #ff0000;
+    border-bottom: 1px solid #ffffff;
+}
+
+.Menu nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Menu a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.Menu a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+/* ==================================================
+   CATÀLEG DE PRODUCTES
+================================================== */
+main {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitol {
+    color: #888888;
+    margin-bottom: 40px;
+}
+
+/* CONTENIDOR DE PRODUCTES (GRID AUTOMÀTIC) */
+.productes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* TARGETA DE PRODUCTE */
+.producte {
+    width: 300px;
+    background-color: #111a3a;
+    border: 1px solid #223366;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.imatge-producte {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #0b1228;
+}
+
+.imatge-producte img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.info-producte {
+    padding: 20px;
+    text-align: left;
+}
+
+.marca {
+    color: #00c6ff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.info-producte h3 {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.info-producte p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.preu {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.producte button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.producte button:hover {
+    background-color: #0056b3;
+}
+
+/* ==================================================
+   OFERTES I CONTACTE
+================================================== */
+.ofertes, .contacte {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #050816;
+    border-top: 1px solid #223366;
+}
+
+.ofertes h2, .contacte h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.ofertes p, .contacte p {
+    color: #aaaaaa;
+}
+
+/* ==================================================
+   PEU DE PÀGINA (FOOTER)
+================================================== */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777777;
+    background-color: #000000;
+}
+
+/* ==================================================
+   ADAPTACIÓ A MÒBILS (RESPONSIVE SENZILL)
+================================================== */
+@media screen and (max-width: 600px) {
+    #capçalera {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form_main {
+        width: 100%;
+    }
+
+    .carrito {
+        width: auto;
+    }
+
+    .Menu nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Menu a {
+        width: 100%;
+        text-align: center;
+    }
+    .producte {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #label_form1 {
+        display: none;
+    }
+
+    .carrito {
+        display: none;
+    }
+}
