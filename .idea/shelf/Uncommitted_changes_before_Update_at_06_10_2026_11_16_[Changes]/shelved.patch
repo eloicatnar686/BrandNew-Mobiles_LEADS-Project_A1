@@ -1,0 +1,39 @@
+Index: Main/BrandNew Mobile/header/header.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"header.css\">\r\n</head>\r\n<body>\r\n    <header>\r\n           <div id=\"capçalera\">\r\n                <img src=\"../MEDIA/logo_white.svg\">\r\n                <h1>Brand New Mobile</h1>\r\n                <img src=\"../MEDIA/carrito.png\">\r\n           </div>\r\n           <div>\r\n               <nav>\r\n                   <ul>\r\n                       <li><a href=\"#\">Inicio</a></li>\r\n                       <li><a href=\"#\">Servicios</a></li>\r\n                       <li><a href=\"#\">Contacto</a></li>\r\n                   </ul>\r\n               </nav>\r\n           </div>    \r\n    </header>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Main/BrandNew Mobile/header/header.html b/Main/BrandNew Mobile/header/header.html
+--- a/Main/BrandNew Mobile/header/header.html	(revision 72375b1c8493f78b3fab8bdc681fd3e4ebb3ec6e)
++++ b/Main/BrandNew Mobile/header/header.html	(date 1791278168070)
+@@ -8,9 +8,9 @@
+ <body>
+     <header>
+            <div id="capçalera">
+-                <img src="../MEDIA/logo_white.svg">
++                <img id="logo" src="../MEDIA/logo_white.svg">
+                 <h1>Brand New Mobile</h1>
+-                <img src="../MEDIA/carrito.png">
++                <img id="carrito" src="../MEDIA/carrito.png">
+            </div>
+            <div>
+                <nav>
+Index: Main/BrandNew Mobile/header/header.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>img{width: 10%;height: 10%;}\r\nbody{background-color: white;}\r\n#capçalera{background-color: red;display: flex;flex-direction: row;justify-content: space-between}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Main/BrandNew Mobile/header/header.css b/Main/BrandNew Mobile/header/header.css
+--- a/Main/BrandNew Mobile/header/header.css	(revision 72375b1c8493f78b3fab8bdc681fd3e4ebb3ec6e)
++++ b/Main/BrandNew Mobile/header/header.css	(date 1791277741275)
+@@ -1,3 +1,4 @@
+-img{width: 10%;height: 10%;}
++logo{width: 10%;height: 10%;}
++#carrito{width: }
+ body{background-color: white;}
+ #capçalera{background-color: red;display: flex;flex-direction: row;justify-content: space-between}
+\ No newline at end of file
