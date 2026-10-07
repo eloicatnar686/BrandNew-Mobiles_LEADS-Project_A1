@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /* HEADER AND NAV MENU */
 
 /* CAPÇELERA */
@@ -180,7 +184,8 @@ article .presentacio{
 
 .banner_principal{
     display: flex;
-    width: 80%;
+    width: 50%;
+    flex-wrap: nowrap;
     flex-direction: column;
     margin-left: 30px;
     justify-content: flex-start;
@@ -197,7 +202,7 @@ article .presentacio{
 .banner_principal h1{
     width: 100%;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     font-size: 300%;
     font-family: "Sans Serif Collection";
     letter-spacing: 1.6px;
@@ -210,4 +215,57 @@ article .presentacio{
 
 .banner_principal p{
     font-family: sans-serif;
+    margin: 2px 0 50px;
+}
+
+.banner_principal #boton_ban_1{
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.banner_principal a{
+    padding: 10px 100px;
+
+}
+
+/* MEDIA QUERIES BANNER */
+@media screen and (max-width: 850px){
+    .banner_principal h4{
+        display: none;
+    }
+    
+    .banner_principal{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .banner_principal h1{
+        font-size: 20pt;
+        line-height: 30px;
+    }
+    
+    .banner_principal p{
+        display: none;
+    }
+    
+    .banner_principal #boton_ban_1{
+        padding: 10px 10px;
+        font-size: 10pt;
+    }
+    
+    .banner_principal a{
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .banner_principal{
+        background-image: none;
+    }
 }
