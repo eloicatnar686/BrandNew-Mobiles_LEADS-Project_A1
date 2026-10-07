@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db396ea-7d13-44fa-8d0b-b6cf5aee7cff" name="Changes" comment="header versio 2">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/BrandNew-Mobiles_LEADS-Project_A1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_10_2026_11_16_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_10_2026_11_16__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5db396ea-7d13-44fa-8d0b-b6cf5aee7cff" name="Changes" comment="cataleg 1 part base">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/BrandNew Mobile/cataleg/cataleg.css" beforeDir="false" afterPath="$PROJECT_DIR$/Main/BrandNew Mobile/cataleg/cataleg.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/BrandNew Mobile/cataleg/cataleg.html" beforeDir="false" afterPath="$PROJECT_DIR$/Main/BrandNew Mobile/cataleg/cataleg.html" afterDir="false" />
     </list>
@@ -50,8 +43,6 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JavaScript Debug.header.html.executor": "Run",
-    "JavaScript Debug.main.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
