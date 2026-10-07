@@ -9,16 +9,18 @@ body{
 /* HEADER AND NAV MENU */
 
 /* CAPÇELERA */
-/* VER 1.0.0 */
+/* VER 1.1.0 */
+
 #capçalera{
     display: flex;
     flex-direction: row;
     background-color: red;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
     flex-wrap: wrap;
     border-bottom: 1px dotted;
+    box-sizing: border-box;
+    
 }
 
 /* CAP --> LOGO */
@@ -238,6 +240,13 @@ article .presentacio{
 }
 
 /* MEDIA QUERIES BANNER */
+@media screen and (max-width: 1080px){
+    .banner_principal p{
+        margin: 0 0 20px;
+    }
+}
+
+
 @media screen and (max-width: 850px){
     .banner_principal h4{
         display: none;
@@ -266,10 +275,51 @@ article .presentacio{
     .banner_principal a{
         margin-top: 70px;
     }
+    
+    .banner_principal .boton_banner{
+        margin-top: 30px
+    }
 }
 
 @media screen and (max-width: 550px){
-    .banner_principal{
+    .cont_principal{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
         background-image: none;
+        height: 20%;
+    }
+    
+    .banner_principal h1{
+        text-align: center;
+        font-size: 10pt;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+    
+    .banner_principal a#boton_ban_1{
+        font-size: 5pt;
+        padding: 0px 0px;
+    }
+    
+    .banner_principal .boton_banner{
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+    
+    /* NOTA DEV: FALTA CENTRAR Y MEJORAR BOTON EN MOVIL */
+    
+    .banner_principal .boton_banner a{
+        padding: 10px;
+    }
+    
+    .banner_principal{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }
