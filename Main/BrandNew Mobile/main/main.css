@@ -411,7 +411,7 @@ article .presentacio{
     font-size: 40px;
     opacity: 0;
     position: absolute;
-    top:35px;
+    
     left:125px;
     border: solid darkgray 2px;
     border-radius: 8px;
@@ -435,14 +435,14 @@ article .presentacio{
 
 #c7
 {
-    background-image: url("../MEDIA/Mov1.png");
+    background-image: url("../MEDIA/Mov8.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #c6
 {
-    background-image: url("../MEDIA/Mov1.png");
+    background-image: url("../MEDIA/Mov7.png");
     background-position: center;
     background-repeat: no-repeat;
     -webkit-animation-delay: -1s;
@@ -452,7 +452,7 @@ article .presentacio{
 }
 #c5
 {
-    background-image: url("../MEDIA/Mov1.png");
+    background-image: url("../MEDIA/Mov6.png");
     background-position: center;
     background-repeat: no-repeat;
     -webkit-animation-delay: -2s;
@@ -462,7 +462,7 @@ article .presentacio{
 }
 #c4
 {
-    background-image: url("../MEDIA/Mov1.png");
+    background-image: url("../MEDIA/Mov5.png");
     background-position: center;
     background-repeat: no-repeat;
     -webkit-animation-delay: -3s;
@@ -472,7 +472,7 @@ article .presentacio{
 }
 #c3
 {
-    background-image: url("../MEDIA/Mov1.png");
+    background-image: url("../MEDIA/Mov4.png");
     background-position: center;
     background-repeat: no-repeat;
     -webkit-animation-delay: -4s;
@@ -482,7 +482,7 @@ article .presentacio{
 }
 #c2
 {
-    background-image: url("../MEDIA/Mov1.png");
+    background-image: url("../MEDIA/Mov3.png");
     background-position: center;
     background-repeat: no-repeat;
     -webkit-animation-delay: -5s;
@@ -492,7 +492,7 @@ article .presentacio{
 }
 #c1
 {
-    background-image: url("../MEDIA/Mov1.png");
+    background-image: url("../MEDIA/Mov2.png");
     background-position: center;
     background-repeat: no-repeat;
     -webkit-animation-delay: -6s;
@@ -520,3 +520,42 @@ article .presentacio{
 #c1 { animation-delay: calc(var(--duration) / -8 * 6); }
 #c0 { animation-delay: calc(var(--duration) / -8 * 7); }
 
+
+.contenedor_principal2 .contenedor_2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    width: 20%;
+}
+
+.contenedor_principal2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.titols_carrousel{
+    font-family: Impact;
+    padding: 20px;
+}
+
+.movils1{
+    width: 200px;
+}
+
+.acces1{
+    width: 200px;
+}
+
+.tablet1{
+    width: 200px;
+}
+
+.per1{
+    width: 200px;
+}
