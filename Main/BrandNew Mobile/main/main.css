@@ -347,7 +347,7 @@ article .presentacio{
 }
 
 
-/* CARROUSEL (codepen) */
+/* CARROUSEL (codepen) + BANNER INFERIOR */
 
 .carrousel
 {
@@ -521,7 +521,7 @@ article .presentacio{
 #c0 { animation-delay: calc(var(--duration) / -8 * 7); }
 
 
-.contenedor_principal2 .contenedor_2{
+.contenedor_principal .contenedor_2{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -530,6 +530,7 @@ article .presentacio{
     align-content: center;
     font-size: 15px;
     width: 20%;
+    
 }
 
 .contenedor_principal2{
@@ -537,25 +538,55 @@ article .presentacio{
     justify-content: center;
     align-content: center;
     width: 100%;
+    backround-color:red;
+    align-items: center;
+    gap: 20px;
+    background-image: url("../MEDIA/Banner test 2.png");
+    background-size: cover;
+
+    
 }
 
 .titols_carrousel{
     font-family: Impact;
     padding: 20px;
+    text-align: center;
 }
 
-.movils1{
-    width: 200px;
+.foto3{
+    width: 100px;
+    height: 120px;
 }
 
-.acces1{
-    width: 200px;
+.foto3:hover{
+    border: solid #4466cc 3px;
+    box-shadow: 0px 0px 10px #4466cc;
+    transition-property: border-color, box-shadow;
+    transition-duration: 0.4ms;
+    transition-timing-function: ease-in;
 }
 
-.tablet1{
-    width: 200px;
+/* MEDIA QUERIES FOR BANNER 2 */
+
+@media screen and (max-width: 800px){
+    .foto3{
+        display: none;
+    }
+    .contenedor_principal2{
+        background-image: none;
+    }
 }
 
-.per1{
-    width: 200px;
+@media screen and (max-width: 330px){
+    .contendedor_2{
+        display: none;
+    }
+
+    .carrousel{
+        display: none;
+    }
+
+    .titols_carrousel{
+        display: none;
+    }
 }
