@@ -611,12 +611,14 @@ article .presentacio{
 .novetat {
     width: 30%;
     background-color: lightyellow;
-    height: 600px;
+    height: auto;
     border: 3px solid black;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    border-radius: 10px;
+    
 }
 
 .titol_novetats{
@@ -628,4 +630,49 @@ article .presentacio{
 .titol_novetats h1{
     font-family: sans-serif;
     font-size: 50px;
+}
+
+.novetat h1{
+    font-family: sans-serif;
+    color: red;
+    margin: 30px auto;
+}
+
+.novetat p{
+    margin: 0 20px;
+}
+
+.novetat a{
+    margin: 30px auto;
+    background-color: red;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    display: inline-block;
+    
+}
+
+.novetat a:hover{
+    color: white;
+    background-color: black;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+/* IMATGES NOVETATS */
+
+.novetat img{
+    width: 700px;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+}
+
+.cardimg{
+    width: 100%;
+    height: 300px;
+    object-fit: cover ;
+    overflow: hidden;
 }
