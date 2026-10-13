@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -182,10 +186,9 @@ article .presentacio{
     width: 100%;
     height: 320px;
     background-image: url("../MEDIA/Banner.png");
-    background-size: 2500px;
-    background-position: center;
+    background-size: 1900px;
+    background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .banner_principal{
@@ -591,16 +594,6 @@ article .presentacio{
     }
 }
 
-/* NOVETATS */
-
-.contenedor_3{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .middle_banner{
     width: 100%;
     height: 50px;
@@ -608,71 +601,102 @@ article .presentacio{
     object-position: top;
 }
 
-.novetat {
-    width: 30%;
-    background-color: lightyellow;
-    height: auto;
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-radius: 10px;
-    
-}
+/* NOVETATS */
 
-.titol_novetats{
+.titol_novetats {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 
-.titol_novetats h1{
+.titol_novetats h1 {
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: clamp(28px, 4vw, 45px); /* Se adapta según el tamaño de la pantalla */
+    text-align: center;
+    margin: 0;
 }
 
-.novetat h1{
+/* Contenedor flexible para las tarjetas */
+.contenedor_3 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que pasen a la siguiente fila en pantallas pequeñas */
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; /* Mantiene todas las tarjetas con la misma altura */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.novetat {
+    flex: 1 1 280px; /* Crece, se encoge y establece un ancho base mínimo de 280px */
+    max-width: 380px; /* Evita que una sola tarjeta ocupe toda la pantalla en pantallas medianas */
+    background-color: lightyellow;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea los botones al final de la tarjeta */
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Asegura que la imagen no sobrepase los bordes redondeados */
+}
+
+/* Títulos y textos dentro de las tarjetas */
+.novetat h1 {
     font-family: sans-serif;
     color: red;
-    margin: 30px auto;
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 15px 10px;
+    word-break: break-word; /* Evita que las palabras muy largas rompan la tarjeta */
 }
 
-.novetat p{
-    margin: 0 20px;
+.novetat p {
+    font-family: sans-serif;
+    margin: 0 20px 20px;
+    line-height: 1.5;
 }
 
-.novetat a{
-    margin: 30px auto;
+.novetat a {
+    margin: 10px auto 20px;
     background-color: red;
-    padding: 20px;
+    padding: 12px 25px;
     border: 2px solid black;
     border-radius: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bold;
     font-family: sans-serif;
     display: inline-block;
-    
+    text-align: center;
 }
 
-.novetat a:hover{
+.novetat a:hover {
     color: white;
     background-color: black;
-    transition-property: background-color;
-    transition-duration: 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-/* IMATGES NOVETATS */
-
-.novetat img{
-    width: 700px;
-    margin: 0 auto 20px;
-    border-radius: 5px;
-}
-
-.cardimg{
+.novetat img, .cardimg {
     width: 100%;
-    height: 300px;
-    object-fit: cover ;
-    overflow: hidden;
+    height: 200px; 
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor_3 {
+        padding: 0 10px;
+    }
+
+    .novetat {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+
+    .novetat h1 {
+        font-size: 20px;
+    }
 }
