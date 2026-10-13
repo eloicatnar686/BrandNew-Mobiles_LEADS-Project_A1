@@ -221,7 +221,7 @@ main h2 {
     Secció PRODUCTES
 ================================================== */
 
-h2 {width: 100%}
+h2 {width: 100%;margin-top: 25px;}
 
 .imatge-producte-mobils img {
     max-width: 100%;

@@ -1,0 +1,184 @@
+/* ==================================================
+   ESTILS GENERALS I BÀSICS
+================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../MEDIA/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif; /* Tipografía limpia */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+}
+
+/* ==================================================
+   CONTENEDOR DEL PRODUCTO (AQUÍ ESTÁ LA SOLUCIÓN)
+================================================== */
+/* Creamos una regla para que article y aside se pongan en paralelo debajo del menú */
+article, aside {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px; /* Separa el producto del menú rojo */
+}
+
+article {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+    float: left
+}
+
+aside {
+    width: 55%;
+    height: auto;
+    margin-left: 40px;
+    float: left;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+div img {
+    background-color: white;
+}
+
+/* ==================================================
+   CAPÇALERA (HEADER)
+================================================== */
+#capçalera {
+    display: flex;
+    flex-direction: row;
+    background-color: #ff0000;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px dotted #ffffff;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* BUSCADOR */
+.form_main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+form #caja-busqueda {
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    padding: 0 15px;
+    outline: none;
+}
+
+label#label_form1 {
+    margin: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+button#submit {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* CARRET */
+.carrito {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.carrito img {
+    width: 30px;
+    display: block;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================================================
+   MENÚ DE NAVEGACIÓ
+================================================== */
+.Menu {
+    background-color: #ff0000;
+    border-bottom: 1px solid #ffffff;
+}
+
+.Menu nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Menu a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.Menu a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
