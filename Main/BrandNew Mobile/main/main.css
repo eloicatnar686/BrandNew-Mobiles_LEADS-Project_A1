@@ -119,6 +119,7 @@ nav{
     background-color: red;
     display: flex;
 
+
 }
 .Menu nav {
     display: flex;
@@ -252,15 +253,15 @@ article .presentacio{
         align-content: center;
         height: 100%;
     }
-    
+
     .banner_principal h4{
         margin-top: 0;
     }
-    
+
     .banner_principal p{
         display: none;
     }
-    
+
     .banner_principal .boton_banner{
         margin-top: 20px;
     }
@@ -414,7 +415,7 @@ article .presentacio{
     font-size: 40px;
     opacity: 0;
     position: absolute;
-    
+
     left:125px;
     border: solid darkgray 2px;
     border-radius: 8px;
@@ -533,7 +534,7 @@ article .presentacio{
     align-content: center;
     font-size: 15px;
     width: 20%;
-    
+
 }
 
 .contenedor_principal2{
@@ -547,7 +548,7 @@ article .presentacio{
     background-image: url("../MEDIA/Banner test 2.png");
     background-size: cover;
 
-    
+
 }
 
 .titols_carrousel{
@@ -642,13 +643,18 @@ article .presentacio{
     overflow: hidden; /* Asegura que la imagen no sobrepase los bordes redondeados */
 }
 
+.novetat:hover{
+    border: solid #4466cc 3px;
+    box-shadow: 0px 0px 10px #4466cc;
+}
+
 /* Títulos y textos dentro de las tarjetas */
 .novetat h1 {
     font-family: sans-serif;
     color: red;
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
-    margin: 20px 15px 10px;
+    margin: 20px 15px 20px;
     word-break: break-word; /* Evita que las palabras muy largas rompan la tarjeta */
 }
 
@@ -680,9 +686,9 @@ article .presentacio{
 
 .novetat img, .cardimg {
     width: 100%;
-    height: 200px; 
+    height: 200px;
     object-fit: cover;
-    object-position: center;
+    object-position: center 0%;
     margin: 0;
 }
 
@@ -692,7 +698,7 @@ article .presentacio{
     }
 
     .novetat {
-        flex: 1 1 100%; 
+        flex: 1 1 100%;
         max-width: 100%;
     }
 
