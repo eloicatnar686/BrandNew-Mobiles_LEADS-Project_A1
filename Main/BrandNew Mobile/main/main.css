@@ -709,7 +709,7 @@ article .presentacio{
 
 /* FOOTER */
 footer{
-    display: flex;
+    display: block;
     border: 1px solid;
     background-color: grey;
     padding: 0;
@@ -730,7 +730,8 @@ footer img{
     max-width: 100%;
     height: auto;
     display: block;
-    width: 150px;
+    width: 50px;
+    margin: 10px;
     
     
 }
@@ -756,4 +757,19 @@ footer a:hover{
     footer a{
         display: none;
     }
+}
+
+.colab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colab p{
+    font-family: Impact;
+    margin: 0;
+}
+
+.colab .destacado2{
+    background-image: linear-gradient();
 }
