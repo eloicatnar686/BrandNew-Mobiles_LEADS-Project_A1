@@ -182,8 +182,9 @@ button#submit {
 
 label#label_form1 {
     margin: 10px;
-    color: white;
-    font-weight: bold;
+    color: black;
+    font-weight: normal; /* Quitamos la negrita */
+    font-family: sans-serif; /* Ponemos la misma tipografía */
 }
 
 /* NAV */

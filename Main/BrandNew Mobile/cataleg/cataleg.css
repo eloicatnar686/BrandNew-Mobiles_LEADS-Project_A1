@@ -6,6 +6,10 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body{background:url("../MEDIA/fondo.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,24 +22,26 @@ body{background:url("../MEDIA/fondo.jpeg");
 #capçalera {
     display: flex;
     flex-direction: row;
-    background-color: #ff0000;
+    background-color: red;
     justify-content: space-around;
     align-items: center;
-    padding: 12px 20px;
     flex-wrap: wrap;
-    border-bottom: 1px dotted #ffffff;
+    border-bottom: 1px dotted;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-/* LOGO */
+/* CAP --> LOGO */
 .logo {
     display: flex;
     width: 100px;
-    align-items: center;
 }
 
 .logo img {
     width: 100%;
     height: auto;
+    display: block;
+    background-color: transparent;
 }
 
 /* BUSCADOR */
@@ -63,8 +69,9 @@ form #caja-busqueda {
 
 label#label_form1 {
     margin: 10px;
-    color: #ffffff;
-    font-weight: bold;
+    color: black;
+    font-weight: normal; /* Quitamos la negrita */
+    font-family: sans-serif; /* Ponemos la misma tipografía */
 }
 
 button#submit {
@@ -109,30 +116,35 @@ button#submit {
 /* ==================================================
    MENÚ DE NAVEGACIÓ
 ================================================== */
+
 .Menu {
-    background-color: #ff0000;
+    background-color: red;
     border-bottom: 1px solid #ffffff;
+    width: 100%;
 }
 
 .Menu nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .Menu a {
     display: block;
     text-decoration: none;
-    padding: 12px 25px;
-    background-color: #ff0000;
-    color: #ffffff;
-    font-weight: bold;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
 
+/* NAV HOVER */
 .Menu a:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: white;
+    color: black;
 }
 /* ==================================================
    CATÀLEG DE PRODUCTES
