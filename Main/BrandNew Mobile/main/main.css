@@ -35,9 +35,15 @@ body{
 
 /* CAP --> CARRITO */
 .carrito{
-    width: 10%;
+    width: 30px;
     display: flex;
     justify-content: center;
+}
+
+.carrito a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
 }
 
 .carrito img{
