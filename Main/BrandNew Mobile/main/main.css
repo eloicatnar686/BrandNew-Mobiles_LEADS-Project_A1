@@ -237,8 +237,44 @@ article .presentacio{
     color: white;
     font-family: sans-serif;
     font-weight: bold;
+    display: inline-block;
+    animation: BotoGlow 2s infinite ease-in-out;
 }
 
+/* KEYFRAME ANIMATION */
+@keyframes BotoGlow {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 0 0);
+    }
+    50% {
+        box-shadow: 0 0 15px 10px rgba(0, 123, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+
+}
+
+
+.boton_banner #boton_ban_1:hover{
+    text-decoration: underline;
+    animation: BotoGlow2 2s infinite ease-in-out;
+}
+
+@keyframes BotoGlow2 {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 17, 255, 0.8);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 15px 10px rgba(0, 17, 255, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 17, 255, 0);
+    }
+}
 .banner_principal a{
     padding: 10px 100px;
 
@@ -322,12 +358,16 @@ article .presentacio{
     .banner_principal a#boton_ban_1{
         font-size: 5pt;
         padding: 0px 0px;
+        width: 100%;
+        font-size: 10pt;
+        text-align: center;
     }
 
     .banner_principal .boton_banner{
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
+        margin-top: -50px;
+        width: 100%;
 
     }
 
@@ -691,6 +731,24 @@ article .presentacio{
     object-position: center 0%;
     margin: 0;
 }
+
+.novetat:hover{
+    animation: NovetatScale 2s;
+}
+
+@keyframes NovetatScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
     .contenedor_3 {
