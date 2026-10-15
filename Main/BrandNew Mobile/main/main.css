@@ -735,6 +735,7 @@ article .presentacio{
 
 .novetat:hover{
     animation: NovetatScale 1.2s;
+    transform: scale(1.05);
 }
 
 @keyframes NovetatScale {
