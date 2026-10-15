@@ -84,17 +84,16 @@ button#submit {
 }
 /* CARRET */
 .carrito {
-    width: 10%;
+    width: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
+
 }
 
-.carrito img {
-    width: 30px;
-    display: block;
+.carrito a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
 }
 
 #cart-count {
