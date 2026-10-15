@@ -733,18 +733,15 @@ article .presentacio{
 }
 
 .novetat:hover{
-    animation: NovetatScale 2s;
+    animation: NovetatScale 1.2s;
 }
 
 @keyframes NovetatScale {
     0% {
         transform: scale(1);
     }
-    50% {
-        transform: scale(1.05);
-    }
     100% {
-        transform: scale(1);
+        transform: scale(1.05);
     }
 }
 
