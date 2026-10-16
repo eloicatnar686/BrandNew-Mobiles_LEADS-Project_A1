@@ -5,6 +5,7 @@
     <title>BrandNew Mobile/signup</title>
     <link type="text/css" rel="stylesheet" href="signup.css">
     <link rel="icon" href="../MEDIA/logo-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
@@ -66,31 +67,56 @@
 
 <div class="contenedor_form">
     <form action="#">
-        <div>
-            <label for="name">Nom</label>
+        <div class="form_title">
+            <h1>Crea el teu compte</h1>
+            <p>Completa el formulari amb les teves dades</p>
+        </div>
+        <div class="form_block">
+            <div class="label_form">
+                <label for="name">Nom</label>
+            </div>
             <input id="name" type="text" required placeholder="Introdueix el teu nom...">
         </div>
-        <div>
-            <label for="last_name">Cognoms</label>
+        <div class="form_block">
+            <div class="label_form">
+                <label for="last_name">Cognoms</label>
+            </div>
             <input id="last_name" type="text" required placeholder="Introdueix el teu cognom...">
         </div>
-        <div>
-            <label for="tel">Nº Teléfon</label>
+        <div class="form_block">
+            <div class="label_form">
+                <label for="tel">Nº Teléfon</label>
+            </div>
             <input id="tel" type="text" placeholder="Introdueix el teu teléfon...">
         </div>
-        <div>
-            <label for="email">E-mail</label>
+        <div class="form_block">
+            <div class="label_form">
+                <label for="email">E-mail</label>
+            </div>
             <input id="email" type="text" placeholder="Introdueix el teu e-mail...">
         </div>
-        <div>
-            <label for="naix">Data de Naixament</label>
+        <div class="form_block">
+            <div class="label_form">
+                <label for="naix">Data de Naixament</label>
+            </div>
             <input id="naix" type="date" required>
         </div>
-
-
-        <input type="submit">
+        <input value="Crea el teu compte" type="submit" class="boton_enviar">
     </form>
+
 </div>
+
+</footer>
 </body>
+<footer> <!-- FOOTER BLOCK -->
+    <div class="container_footer">
+        <img src="../MEDIA/logo-icon.png">
+    </div>
+    <div class="colab">
+        <p>IN COLAB WITH <span class="destacado2">NEXTBYTE</span></p>
+    </div>
+    </div>
+
+
 
 </html>
