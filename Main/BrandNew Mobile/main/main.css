@@ -10,6 +10,10 @@ body{
     padding: 0;
     margin: 0;
 }
+html::-webkit-scrollbar {
+    display: none;
+}
+
 /* HEADER AND NAV MENU */
 
 /* CAPÇELERA */

@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* HEADER */
+
+#capçalera{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px dotted;
+    box-sizing: border-box;
+
+}
+
+/* CAP --> LOGO */
+.logo{
+    display: flex;
+    width: 100px;
+}
+
+/* CAP --> CARRITO */
+.cont-bar{ /*<!-- BOOTSTRAP ICONS -->*/
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+.cont-bar a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.cont-bar img{
+    width: 25px;
+    display: flex;
+}
+
+.main-icons .user,.poli{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+.main-icons .cont-bar a, .user a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poli a{
+    color: white;
+}
+
+.user svg, .cont-bar svg, .poli svg{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    display: block;
+}
+
+.main-icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cont-bar, .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*<!-- BOOTSTRAP ICONS -->*/
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 300px){
+
+    #label_form1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-icons{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 130px){
+
+    .form{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* FORM */
+
+form{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    justify-content: center;
+
+}
+.form_main{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+form #caja-busqueda{
+    width: 80%;
+    border: 1px;
+    border-radius: 20px;
+    height: 35px;
+}
+
+button#submit{
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+label#label_form1{
+    margin: 10px;
+}
+
+button#submit{
+    margin: 10px;
+}
+
+
+/* NAV */
+nav{
+    background-color: red;
+    display: flex;
+
+
+}
+.Menu nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+.Menu a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAV HOVER */
+.Menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    display: flex;
+    border: 1px solid;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: 20px;
+}
+
+.container_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    margin: 0 30px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 50px;
+    margin: 10px;
+
+
+}
+
+footer a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    display: block;
+    padding: 10px 50px;
+}
+
+footer a:hover{
+    color: red;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+@media screen and (max-width: 795px){
+    footer a{
+        display: none;
+    }
+}
+
+.colab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colab p{
+    font-family: Impact;
+    margin: 0;
+}
