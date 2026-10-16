@@ -34,21 +34,58 @@ body{
 }
 
 /* CAP --> CARRITO */
-.carrito{
+.cont-bar{ /*<!-- BOOTSTRAP ICONS -->*/
     width: 30px;
     display: flex;
     justify-content: center;
 }
-.carrito a{
+.cont-bar a{
     width: 100%;
     text-decoration: none;
     color: black;
 }
 
-.carrito img{
+.cont-bar img{
     width: 25px;
     display: flex;
 }
+
+.main-icons .user,.poli{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+ .main-icons .cont-bar a, .user a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poli a{
+    color: white;
+}
+
+.user svg, .cont-bar svg, .poli svg{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    display: block;
+}
+
+.main-icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cont-bar, .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*<!-- BOOTSTRAP ICONS -->*/
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 300px){
@@ -58,17 +95,15 @@ body{
     }
 }
 
-@media screen and (max-width: 360px) {
-    .carrito{
+@media screen and (max-width: 700px) {
+    .main-icons{
         display: none;
     }
 }
 
 
 @media screen and (max-width: 130px){
-    .carrito{
-        display: none;
-    }
+
     .form{
         display: none;
     }
