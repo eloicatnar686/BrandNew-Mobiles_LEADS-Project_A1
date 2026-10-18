@@ -698,34 +698,34 @@ article .presentacio{
 .titol_novetats h1 {
     font-family:Impact;
     letter-spacing: 1.3px;
-    font-size: clamp(28px, 4vw, 45px); /* Se adapta según el tamaño de la pantalla */
+    font-size: clamp(28px, 4vw, 45px);
     text-align: center;
     margin: 0;
 }
 
-/* Contenedor flexible para las tarjetas */
+
 .contenedor_3 {
     display: flex;
-    flex-wrap: wrap; /* Permite que pasen a la siguiente fila en pantallas pequeñas */
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    align-items: stretch; /* Mantiene todas las tarjetas con la misma altura */
+    align-items: stretch;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .novetat {
-    flex: 1 1 280px; /* Crece, se encoge y establece un ancho base mínimo de 280px */
-    max-width: 380px; /* Evita que una sola tarjeta ocupe toda la pantalla en pantallas medianas */
+    flex: 1 1 280px;
+    max-width: 380px;
     background-color: lightyellow;
     border: 3px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Alinea los botones al final de la tarjeta */
+    justify-content: space-between;
     border-radius: 10px;
     box-sizing: border-box;
-    overflow: hidden; /* Asegura que la imagen no sobrepase los bordes redondeados */
+    overflow: hidden;
 }
 
 .novetat:hover{
@@ -733,14 +733,13 @@ article .presentacio{
     box-shadow: 0px 0px 10px #4466cc;
 }
 
-/* Títulos y textos dentro de las tarjetas */
 .novetat h1 {
     font-family: sans-serif;
     color: red;
     font-size: 30px;
     text-align: center;
     margin: 20px 15px 20px;
-    word-break: break-word; /* Evita que las palabras muy largas rompan la tarjeta */
+    word-break: break-word;
 }
 
 .novetat p {
